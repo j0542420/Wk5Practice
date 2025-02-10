@@ -14,7 +14,7 @@ namespace Wk5Practice
             //ask user input a string
             string input = Console.ReadLine();
             //process
-            Dictionary<char, int> duplications = new Dictionary<string, int>();
+            Dictionary<char, int> duplications = new Dictionary<char, int>();
             foreach (char c in input)
             {
                 //check if dictionary already not has a key (character), then add a key
@@ -28,9 +28,9 @@ namespace Wk5Practice
                 }
             }
 
-            foreach (KeyValuePair<string, int> pair in duplications.Values)
+            foreach (KeyValuePair<string, int> kvp in duplications)
             { 
-                Console.WriteLine(Kvp.key + ";"+kvp.Value);
+                Console.WriteLine(kvp + ";"+kvp.Value);
             }
 
             Console.ReadLine();
